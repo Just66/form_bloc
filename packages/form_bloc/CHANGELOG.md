@@ -1,3 +1,6 @@
+# 0.19.2
+* Fix dependacies.
+
 # 0.19.1
 * Fix add `FormBloc` of items in `ListFieldBloc`.
 
