@@ -661,14 +661,14 @@ class _TypeAheadFieldState<T> extends State<TypeAheadField<T>>
         _SuggestionsBox(context, widget.direction, widget.autoFlipDirection);
     widget.suggestionsBoxController?._suggestionsBox = this._suggestionsBox;
 
-    _keyboardSubscription =
-        keyboardVisibilityController.onChange.listen((bool visible) {
-      setState(() {
-        if (widget.hideSuggestionsOnKeyboardHide && !visible) {
-          _effectiveFocusNode!.unfocus();
-        }
-      });
-    });
+//     _keyboardSubscription =
+//         keyboardVisibilityController.onChange.listen((bool visible) {
+//       setState(() {
+//         if (widget.hideSuggestionsOnKeyboardHide && !visible) {
+//           _effectiveFocusNode!.unfocus();
+//         }
+//       });
+//     });
 
     this._focusNodeListener = () {
       if (_effectiveFocusNode!.hasFocus) {
